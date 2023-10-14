@@ -60,3 +60,9 @@ for (pic of pictureCollection){
   imgs += `<img class="galleryPics" src="./src/images/tucson/${pic}">` + '\n';
 }
 galleryPics.innerHTML = imgs;*/
+
+const galleryBtn = document.getElementById("galleryButton");
+console.log(1)
+galleryBtn.addEventListener('click', ()=>{
+    window.location.href = 'src/gallery/gallery.html'
+})
