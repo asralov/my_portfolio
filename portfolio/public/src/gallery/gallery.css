@@ -70,6 +70,32 @@ body {
     box-shadow: inset 280px 0 0 0 #d5d1d1;;
   }
   
-  .galleryPics{
+  #galleryTitle{
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 1%;
+  }
+
+  #galleryText{
+    font-weight: 400;
+    font-size: 3.5vh;
+  }
+  #galleryPic{
     width: 10%;
+  }
+
+  .galleryPics{
+    width: 16.3%;
+  }
+
+
+
+  #gallery{
+    background-color: rgba(69, 69, 69, 0.6);
+    width: 90%;
+    height: auto;
+    padding: 10px 10px;
+    margin-left: 4%;
   }

@@ -46,21 +46,6 @@ const galleryTextContent = document.getElementById("galleryTitle");
 galleryTextContent.innerHTML = galleryText;
 
 
-// pictures part
-pictureCollection = new Array(); // to store pictures in
-// eleven since there are 11 pictures that should be stored
-for (let c = 1; c <=11; c++){
-  pictureCollection.push("tucson"+c+".jpg");
-}
-
-/*
-let imgs = "";
-const galleryPics = document.getElementById("gallery");
-for (pic of pictureCollection){
-  imgs += `<img class="galleryPics" src="./src/images/tucson/${pic}">` + '\n';
-}
-galleryPics.innerHTML = imgs;*/
-
 const galleryBtn = document.getElementById("galleryButton");
 console.log(1)
 galleryBtn.addEventListener('click', ()=>{
