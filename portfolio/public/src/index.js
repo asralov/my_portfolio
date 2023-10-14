@@ -1,42 +1,31 @@
-
-
-const closeBtn = document.getElementById("closeMenuButton");
-const openBtn = document.getElementById("menuButton");
-function openBar(isOpen) {
-  const navbar = document.getElementById("navbarLinks");
-  if (isOpen) {
-    showMenu(navbar);
+// to make the sidebar closed by default
+let isOpen = false;
+const btn = document.getElementById("menuButton");
+function showSideBar() {
+  const menuBar = document.getElementById("navbarLinks");
+  // if it is closed, and is about to be open
+  if (!isOpen) {
+    btn.style.transform = "translateX(0)";
+    menuBar.style.transform = "translateX(0)";
+    isOpen = true;
   } else {
-    closeMenu(navbar);
+    btn.style.transform = "translateX(-280px)";
+    menuBar.style.transform = "translateX(-280px)";
+    isOpen = false;
   }
 }
-console.log(closeBtn.innerHTML)
+const menuBar = document.getElementById("navbarLinks");
 
-function showMenu(navbar) {
-  navbar.style = `height: 100vh;
-                    width: 20%;
-                    background-color: rgba(10, 10, 10, 0.4);
-                    color: #fff;
-                    -webkit-transition: all 0.2s ease-out;
-                    `;
-  openBtn.style = "opacity: 1";
-  closeBtn.style = `position: fixed;
-                    left: 17%;
-                    top: 5px;
-                    font-size: 20px;
-                    padding: 5px 5px;
-                    border: none;
-                    color: red;
-                    background-color: #fff;`;
-}
-
-function closeMenu(navbar) {
-  navbar.style.display = "none";
-  openBtn.style = `position: fixed;
-                    left: 5px;
-                    top: 5px;
-                    padding: 10px 10px;`;
-  closeBtn.style = "opacity: 1;";
-}
-
-
+btn.addEventListener('click', ()=>{
+  if (!isOpen) {
+    menuBar.style.left = 0;
+    btn.style.left = 20+"%";
+    isOpen = true;
+  } else {
+   
+    menuBar.style.left = -20 + "%";
+    btn.style.left = 0;
+    isOpen = false;
+  }
+  console.log(isOpen)
+});
