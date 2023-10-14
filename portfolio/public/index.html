@@ -8,9 +8,9 @@
     <title>Abrorjon Asralov</title>
   </head>
   <body>
-    <!--Left Navbar-->
+    <!-------------------------Left Navbar------------------------>
     <div id="navbar">
-      <!--Links and Texts go here-->
+      <!-----------------Links and Texts go here------------------>
       <button id="menuButton" class="fas fa-bars"></button>
       <!--SideBar-->
       <div id="navbarLinks">
@@ -20,19 +20,32 @@
         <a class="links" href="#">Skills</a>
         <a class="links" href="#">Email</a>
       </div>
-      <!--Name, Title, and Photo-->
-      <div id="title">
-        <span id="studentInfo">Student && Web Developer<br>Abrorjon Asralov</span>
-        <img src="./src/images/userAvatar.png" id="personalPhoto">
-      </div>
-      <!--Left Box, Personal Info-->
+    </div>
+    <!-------------------Name, Title, and Photo----------------->
+    <div id="title">
+      <span id="studentInfo">Student && Web Developer<br />Abrorjon Asralov</span>
+      <img src="./src/images/userAvatar.png" id="personalPhoto" />
+    </div>
+    <!--Main container to keep left and right boxes-->
+    <div id="mainBox">
+      <!-------------------Left Box, Personal Info----------------->
       <div id="personalInfo">
-        <!--Content of Personal Info-->
+        <!----------------Content of Personal Info----------------->
         <span id="personalInfoText"></span>
+      </div>
+      <!-----Right Side to Show some cool pictures i took in tucson----->
+      <div id="rightContent">
+        <div id="galleryTitle">
+          <!--some text-->
+        </div>
+        <div id="gallery">
+          <!--A container for scrolling pictures-->
+          <button id="galleryButton">Click To Visit</button>
+        </div>
       </div>
     </div>
     <div id="contentBox">
-      <!--It is a scrollable -->
+      <!-------------------It is a scrollable --------------------->
     </div>
     <script src="./src/index.js"></script>
   </body>
